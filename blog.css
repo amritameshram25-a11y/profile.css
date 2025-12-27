@@ -1,0 +1,157 @@
+/* ============================
+   🌐 BLOG PAGE STYLING
+   The Magic of Learning Web Development
+   ============================ */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #fff);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ============================
+   HEADER SECTION
+   ============================ */
+h1 {
+    text-align: center;
+    background-color: #007acc;
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ============================
+   NAVIGATION BAR
+   ============================ */
+nav {
+    background-color: #4db6ac;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 8px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #004d40;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #00796b;
+    color: white;
+}
+
+/* ============================
+   BLOG CONTENT AREA
+   ============================ */
+article {
+    max-width: 800px;
+    margin: 30px auto;
+    background:pink;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+p {
+    line-height: 1.8;
+    font-size: 17px;
+    color:blue;
+    text-align: center;
+}
+
+/* Author line */
+p strong, p em {
+    color: #00796b;
+}
+
+/* ============================
+   IMAGES
+   ============================ */
+article img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+article img:hover {
+    transform: scale(1.03);
+}
+
+/* ============================
+   SUBHEADINGS & BLOCKQUOTES
+   ============================ */
+h2, h3 {
+    color:red;
+    margin-top: 30px;
+}
+
+blockquote {
+    background: #e0f2f1;
+    border-left: 6px solid #00796b;
+    padding: 15px 20px;
+    font-style: italic;
+    color: #004d40;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   LINKS
+   ============================ */
+a {
+    color: deeppink;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    article {
+        width: 90%;
+        padding: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
