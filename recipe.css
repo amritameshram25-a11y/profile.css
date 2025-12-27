@@ -1,0 +1,252 @@
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', 'Arial', serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+            padding: 30px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3.5em;
+            background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
+            color: white;
+            padding: 50px 20px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(108, 92, 231, 0.4);
+            margin-bottom: 30px;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        nav {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            margin-bottom: 40px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0;
+        }
+
+        nav a {
+            display: block;
+            padding: 12px 20px;
+            background: linear-gradient(135deg, #fd79a8, #e84393);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            font-size: 0.95em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(232, 67, 147, 0.3);
+        }
+
+        nav a:hover {
+            background: linear-gradient(135deg, #e84393, #fd79a8);
+            transform: translateY(-4px) scale(1.05);
+            box-shadow: 0 6px 20px rgba(232, 67, 147, 0.5);
+        }
+.intro {
+            text-align: center;
+            font-size: 1.4em;
+            color: #2d3436;
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            font-style: italic;
+            border: 3px dashed #fd79a8;
+        }
+
+        
+        img {
+            display: block;
+            margin: 40px auto;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            border: 8px solid white;
+            transition: all 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+
+        img:hover {
+            transform: scale(1.05) rotate(2deg);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.4);
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #d63031;
+            margin-top: 50px;
+            margin-bottom: 25px;
+            padding: 20px 25px;
+            background: white;
+            border-radius: 15px;
+            border-left: 8px solid #e17055;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            font-family: 'Comic Sans MS', cursive;
+        }
+
+        h2:nth-of-type(1)::before {
+            content: "🥣 ";
+        }
+
+        h2:nth-of-type(2)::before {
+            content: "📝 ";
+        }
+
+        /* Ingredients List */
+        ul {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe5e5 100%);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            list-style: none;
+            margin: 25px 0;
+            border: 3px solid #fab1a0;
+        }
+
+        ul li {
+            font-size: 1.3em;
+            padding: 15px 20px;
+            margin-bottom: 12px;
+            background: white;
+            border-radius: 10px;
+            border-left: 6px solid #e17055;
+            transition: all 0.3s ease;
+            color: #2d3436;
+        }
+
+        ul li:hover {
+            transform: translateX(15px);
+            box-shadow: 0 5px 15px rgba(225, 112, 85, 0.3);
+            background: #fff5f5;
+        }
+
+        ul li::before {
+            content: "🍫 ";
+        }
+
+        /* Instructions List */
+        ol {
+            background: linear-gradient(135deg, #dfe6e9 0%, #b2bec3 100%);
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            counter-reset: step-counter;
+            list-style: none;
+            margin: 25px 0;
+            border: 3px solid #74b9ff;
+        }
+
+        ol li {
+            font-size: 1.2em;
+            padding: 20px 25px 20px 60px;
+            margin-bottom: 15px;
+            background: white;
+            border-radius: 10px;
+            border-left: 6px solid #0984e3;
+            position: relative;
+            counter-increment: step-counter;
+            transition: all 0.3s ease;
+            color: #2d3436;
+        }
+
+        ol li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 15px rgba(9, 132, 227, 0.3);
+            background: #e3f2fd;
+        }
+
+        ol li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: linear-gradient(135deg, #74b9ff, #0984e3);
+            color: white;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1em;
+            box-shadow: 0 3px 10px rgba(9, 132, 227, 0.4);
+        }
+
+        strong {
+            color: #d63031;
+            font-weight: bold;
+            background: #fff5f5;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        em {
+            color: #00b894;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.2em;
+                padding: 30px 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .intro {
+                font-size: 1.2em;
+            }
+
+            ul, ol {
+                padding: 20px;
+            }
+
+            ul li, ol li {
+                font-size: 1.1em;
+            }
+
+            ol li {
+                padding-left: 50px;
+            }
+        }
