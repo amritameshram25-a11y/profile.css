@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:white;
+    color: #333;
+    background: wheat;
+    background-size: cover;
+    background-position: 0%;
+    background-repeat: no-repeat;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+/* 🔷 Header */
+header {
+   background-color: #2a5298;
+   color: white;
+   text-align: center;
+   padding: 20px 0;
+   box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+/* Labels */
+label {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+/* Submit Button */
+button[type="submit"] {
+    padding: 18px 40px;
+    color: white;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 50px;
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6);
+}
